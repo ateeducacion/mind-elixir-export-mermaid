@@ -47,11 +47,11 @@ try {
   const installed = Object.keys(installedLock.packages).filter(Boolean);
   assert.deepEqual(
     installed,
-    ["node_modules/@ateeducacion/mind-elixir-export-mermaid"],
+    ["node_modules/@erseco/mind-elixir-export-mermaid"],
     "The package must have no runtime dependencies",
   );
   const check = `
-    import convert, { mindElixirToMermaid } from "@ateeducacion/mind-elixir-export-mermaid";
+    import convert, { mindElixirToMermaid } from "@erseco/mind-elixir-export-mermaid";
     const source = mindElixirToMermaid({ nodeData: { topic: "Root", children: [{ topic: "A & <b>" }] } });
     if (convert !== mindElixirToMermaid) process.exit(1);
     if (source !== 'mindmap\\n  n0(("Root"))\\n    n1("A & #lt;b#gt;")') process.exit(2);
@@ -65,7 +65,7 @@ try {
         join(
           temporary,
           "node_modules",
-          "@ateeducacion",
+          "@erseco",
           "mind-elixir-export-mermaid",
           "package.json",
         ),

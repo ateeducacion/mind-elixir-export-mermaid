@@ -1,9 +1,9 @@
 # Mind Elixir export to Mermaid
 
-[![CI](https://github.com/ateeducacion/mind-elixir-export-mermaid/actions/workflows/ci.yml/badge.svg)](https://github.com/ateeducacion/mind-elixir-export-mermaid/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/ateeducacion/mind-elixir-export-mermaid/branch/main/graph/badge.svg)](https://codecov.io/gh/ateeducacion/mind-elixir-export-mermaid)
-[![npm](https://img.shields.io/npm/v/@ateeducacion/mind-elixir-export-mermaid)](https://www.npmjs.com/package/@ateeducacion/mind-elixir-export-mermaid)
-[![Publish](https://github.com/ateeducacion/mind-elixir-export-mermaid/actions/workflows/publish.yml/badge.svg)](https://github.com/ateeducacion/mind-elixir-export-mermaid/actions/workflows/publish.yml)
+[![CI](https://github.com/erseco/mind-elixir-export-mermaid/actions/workflows/ci.yml/badge.svg)](https://github.com/erseco/mind-elixir-export-mermaid/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/erseco/mind-elixir-export-mermaid/branch/main/graph/badge.svg)](https://codecov.io/gh/erseco/mind-elixir-export-mermaid)
+[![npm](https://img.shields.io/npm/v/@erseco/mind-elixir-export-mermaid)](https://www.npmjs.com/package/@erseco/mind-elixir-export-mermaid)
+[![Publish](https://github.com/erseco/mind-elixir-export-mermaid/actions/workflows/publish.yml/badge.svg)](https://github.com/erseco/mind-elixir-export-mermaid/actions/workflows/publish.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Converts [Mind Elixir](https://github.com/SSShooter/mind-elixir-core) mind maps to
@@ -20,14 +20,14 @@ No runtime dependencies, no DOM, and it works in browsers, Node.js, Bun and Deno
 ## Install
 
 ```sh
-npm install @ateeducacion/mind-elixir-export-mermaid
+npm install @erseco/mind-elixir-export-mermaid
 ```
 
 ## Use
 
 ```ts
 import MindElixir from "mind-elixir";
-import { mindElixirToMermaid } from "@ateeducacion/mind-elixir-export-mermaid";
+import { mindElixirToMermaid } from "@erseco/mind-elixir-export-mermaid";
 
 const mind = new MindElixir({ el: "#map" });
 mind.init(MindElixir.new("Science"));

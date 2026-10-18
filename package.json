@@ -1,16 +1,16 @@
 {
-  "name": "@ateeducacion/mind-elixir-export-mermaid",
-  "version": "0.1.2",
+  "name": "@erseco/mind-elixir-export-mermaid",
+  "version": "0.1.3",
   "description": "Export Mind Elixir mind maps to Mermaid mindmap syntax, for lightweight vector output with Mermaid or Pele",
   "license": "MIT",
   "author": "Ernesto Serrano",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ateeducacion/mind-elixir-export-mermaid.git"
+    "url": "git+https://github.com/erseco/mind-elixir-export-mermaid.git"
   },
-  "homepage": "https://github.com/ateeducacion/mind-elixir-export-mermaid#readme",
+  "homepage": "https://github.com/erseco/mind-elixir-export-mermaid#readme",
   "bugs": {
-    "url": "https://github.com/ateeducacion/mind-elixir-export-mermaid/issues"
+    "url": "https://github.com/erseco/mind-elixir-export-mermaid/issues"
   },
   "keywords": [
     "mind-elixir",
