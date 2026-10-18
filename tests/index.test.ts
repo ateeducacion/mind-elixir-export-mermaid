@@ -86,12 +86,13 @@ describe("mindElixirToMermaid", () => {
       "( ) [ ] { } :: :::",
       "数学 🌍 ñ",
       "**not bold** and _not italic_",
+      "%%{init: {theme: dark}}%% 100%",
     ];
     const source = mindElixirToMermaid({
       topic: "Root",
       children: special.map((topic) => ({ topic })),
     });
-    expect(source).not.toMatch(/[<>'`]/);
+    expect(source).not.toMatch(/[<>'`%]/);
     expect(renderedTopics(source)).toEqual(["Root", ...special].sort());
   });
 

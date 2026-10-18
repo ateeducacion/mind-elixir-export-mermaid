@@ -87,7 +87,8 @@ mindElixirToMermaid(data, {
 
 The hierarchy, the order and the text of every node. Text is written with Mermaid's
 entity codes (`#quot;`, `#lt;`, `#35;`, …), so a topic can contain quotes, brackets,
-`#`, `*`, `_` or HTML-like text and still renders exactly as typed, never as markup.
+`#`, `%`, `*`, `_` or HTML-like text and still renders exactly as typed, never as markup
+or as a Mermaid directive (`%%{init: …}%%`).
 
 Mermaid's `mindmap` syntax has no equivalent for per-node colours and font styles (other
 than bold and italic in markdown mode), branch sides, folded state, arrows, summaries,
