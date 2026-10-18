@@ -54,12 +54,12 @@
     "test:package": "node scripts/test-package.mjs"
   },
   "devDependencies": {
-    "@types/node": "26.6.4",
-    "@vitest/coverage-v8": "5.0.3",
+    "@types/node": "26.6.5",
+    "@vitest/coverage-v8": "5.0.4",
     "mind-elixir": "5.15.1",
     "pele": "1.6.0",
-    "prettier": "3.9.9",
+    "prettier": "3.9.10",
     "typescript": "7.0.2",
-    "vitest": "5.0.3"
+    "vitest": "5.0.4"
   }
 }
