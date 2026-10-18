@@ -1,6 +1,10 @@
 # Changelog
 
-## 0.1.0 — Unreleased
+## 0.1.1 — 2026-10-18
+
+- Published from CI with npm Trusted Publishing and provenance. No code changes.
+
+## 0.1.0 — 2026-10-18
 
 - First release: `mindElixirToMermaid(data, options)` converts Mind Elixir data or a node
   to Mermaid `mindmap` source, with node shapes, classes, icons, markdown strings for bold,
