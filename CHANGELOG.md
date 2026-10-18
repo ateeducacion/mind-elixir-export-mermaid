@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Encode `%` (`#37;`). Mermaid removes `%%{...}%%` directives anywhere in the source before
+  parsing, so a topic containing one lost that text or made the whole diagram fail to parse.
+
 ## 0.1.1 — 2026-10-18
 
 - Published from CI with npm Trusted Publishing and provenance. No code changes.

@@ -75,11 +75,13 @@ const ICON = /^[\w -]+$/;
 
 /**
  * Mermaid entity codes for the characters Mermaid would otherwise read as syntax, markup,
- * entities or formatting (Pele formats `*` and `_` even outside markdown strings). `#` comes
- * first, so the codes added afterwards are not encoded again.
+ * entities or formatting (Pele formats `*` and `_` even outside markdown strings). Mermaid
+ * also strips `%%{...}%%` directives anywhere in the source before parsing, so `%` is encoded
+ * too. `#` comes first, so the codes added afterwards are not encoded again.
  */
 const ENTITIES: ReadonlyArray<readonly [RegExp, string]> = [
   [/#/g, "#35;"],
+  [/%/g, "#37;"],
   [/"/g, "#quot;"],
   [/</g, "#lt;"],
   [/>/g, "#gt;"],
