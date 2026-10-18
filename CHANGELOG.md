@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4 — 2026-10-18
+
+- README: measured sizes in bytes and in kB/MB, against Pele's SVG and a PNG, and a pointer to
+  [@erseco/mind-elixir-export-svg](https://github.com/erseco/mind-elixir-export-svg) for an SVG
+  that keeps the editor's look. No code changes.
+
 ## 0.1.3 — 2026-10-18
 
 - Renamed to `@erseco/mind-elixir-export-mermaid`, and the repository moved to

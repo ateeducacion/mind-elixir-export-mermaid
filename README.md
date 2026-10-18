@@ -12,8 +12,17 @@ Converts [Mind Elixir](https://github.com/SSShooter/mind-elixir-core) mind maps 
 Mermaid text is tiny, and it can be rendered to a sharp, lightweight SVG by
 [Mermaid](https://mermaid.js.org) or by [Pele](https://github.com/obsidianmd/pele), which
 needs no DOM and also runs on a server. GitHub, GitLab, Obsidian, Notion and many
-documentation tools display it as well. For a 16-node map, the SVG that Pele renders from
-this output is 8 KB (1.7 KB gzip), against 84 KB for a PNG screenshot of the same map.
+documentation tools display it as well. Measured on a 16-node map (13 shown) and a 311-node map
+([benchmark](https://github.com/erseco/mind-elixir-export-svg/blob/main/docs/COMPATIBILITY.md#benchmarks)):
+
+| Map       | Mermaid source   | Pele's SVG of it   | gzip             | PNG screenshot of the editor |
+| --------- | ---------------- | ------------------ | ---------------- | ---------------------------- |
+| 16 nodes  | 516 B            | 6,826 B (6.8 kB)   | 1,521 B (1.5 kB) | 94,735 B (95 kB)             |
+| 311 nodes | 8,884 B (8.9 kB) | 128,543 B (129 kB) | 7,248 B (7.2 kB) | 1,393,514 B (1.39 MB)        |
+
+Mermaid keeps only the hierarchy and the text. For an SVG that looks like the editor (colours,
+styles, sides, arrows, summaries), see
+[@erseco/mind-elixir-export-svg](https://github.com/erseco/mind-elixir-export-svg).
 
 No runtime dependencies, no DOM, and it works in browsers, Node.js, Bun and Deno.
 
@@ -104,9 +113,9 @@ Invalid input throws a `TypeError`, and an invalid option, class name or icon th
 This package was proposed in
 [mind-elixir-core#386](https://github.com/SSShooter/mind-elixir-core/issues/386). Thanks
 to [@SSShooter](https://github.com/SSShooter) for Mind Elixir and for the suggestion to
-make it a separate package. It is used by [eXeLearning](https://github.com/exelearning/exelearning),
-an open-source authoring tool for educational content, whose published content needs a
-static image of each mind map.
+make it a separate package. It was written for
+[eXeLearning](https://github.com/exelearning/exelearning), an open-source authoring tool for
+educational content, whose published content needs a static image of each mind map.
 
 ## Develop
 
