@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.3 — 2026-10-18
+
+- Renamed to `@erseco/mind-elixir-export-mermaid`, and the repository moved to
+  [erseco/mind-elixir-export-mermaid](https://github.com/erseco/mind-elixir-export-mermaid).
+  `@ateeducacion/mind-elixir-export-mermaid` is deprecated; replace it with the new name. No code
+  changes.
+
 ## 0.1.2 — 2026-10-18
 
 - Encode `%` (`#37;`). Mermaid removes `%%{...}%%` directives anywhere in the source before

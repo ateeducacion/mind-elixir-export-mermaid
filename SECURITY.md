@@ -8,7 +8,7 @@ patch or minor version.
 ## Reporting
 
 Please report vulnerabilities privately through
-[GitHub Security Advisories](https://github.com/ateeducacion/mind-elixir-export-mermaid/security/advisories/new)
+[GitHub Security Advisories](https://github.com/erseco/mind-elixir-export-mermaid/security/advisories/new)
 ("Report a vulnerability"). Do not open public issues for them. Include the version, the map data
 (or the smallest topic) that triggers the problem, the options you passed and, if it is about
 rendering, the renderer and its version.
@@ -22,7 +22,7 @@ hostile, because maps are often written by other people (shared documents, impor
 | Threat                                                                     | Mitigation                                                                                                                                                                                                                                                                |
 | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | A topic that closes its label, adds lines or nodes, or changes the diagram | Every topic is written as a quoted label with Mermaid entity codes for `#`, `%`, `"`, `<`, `>`, `'`, `` ` ``, `*` and `_` (`#` first, so codes are never encoded twice). Line breaks become spaces, or stay inside the quoted markdown string with the `markdown` option. |
-| A topic that forms a Mermaid directive (`%%{init: …}%%`)                   | `%` is encoded, so Mermaid's directive pre-processing never sees one (from the release after 0.1.1, [#2](https://github.com/ateeducacion/mind-elixir-export-mermaid/pull/2)).                                                                                             |
+| A topic that forms a Mermaid directive (`%%{init: …}%%`)                   | `%` is encoded, so Mermaid's directive pre-processing never sees one (from the release after 0.1.1, [#2](https://github.com/erseco/mind-elixir-export-mermaid/pull/2)).                                                                                                   |
 | A topic read as HTML or markdown by the renderer                           | `<`, `>`, `*`, `_` and `` ` `` are encoded; in markdown mode only bold and italic from the node's style are added, by the library.                                                                                                                                        |
 | Callbacks returning syntax (`className`, `icon`, `shape`)                  | Class names must match `^[A-Za-z_][\w-]*$`, icons `^[\w -]+$`, and shapes one of the six Mermaid shapes; anything else throws a `RangeError` instead of being written.                                                                                                    |
 | Input that is not a Mind Elixir map                                        | Throws a `TypeError`; nothing is written.                                                                                                                                                                                                                                 |
