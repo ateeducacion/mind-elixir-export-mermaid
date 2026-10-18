@@ -1,0 +1,65 @@
+{
+  "name": "@ateeducacion/mind-elixir-export-mermaid",
+  "version": "0.1.0",
+  "description": "Export Mind Elixir mind maps to Mermaid mindmap syntax, for lightweight vector output with Mermaid or Pele",
+  "license": "MIT",
+  "author": "Ernesto Serrano",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ateeducacion/mind-elixir-export-mermaid.git"
+  },
+  "homepage": "https://github.com/ateeducacion/mind-elixir-export-mermaid#readme",
+  "bugs": {
+    "url": "https://github.com/ateeducacion/mind-elixir-export-mermaid/issues"
+  },
+  "keywords": [
+    "mind-elixir",
+    "mermaid",
+    "mindmap",
+    "mind-map",
+    "pele",
+    "svg",
+    "export"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "check": "npm run format:check && npm run typecheck && npm test && npm run build",
+    "prepack": "npm run build",
+    "test:package": "node scripts/test-package.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.4",
+    "@vitest/coverage-v8": "5.0.3",
+    "mind-elixir": "5.15.1",
+    "pele": "1.6.0",
+    "prettier": "3.9.9",
+    "typescript": "7.0.2",
+    "vitest": "5.0.3"
+  }
+}
